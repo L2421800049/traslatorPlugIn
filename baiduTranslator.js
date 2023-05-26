@@ -139,9 +139,8 @@ class BaiduTraslator{
         this.logger.info('Baidu Translate word:\t' + word)
         await this.getToken()
         const resp = await this.getWordTraslator(word)
-        console.log(resp)
         this.logger.info('Baidu Translate word:\t' + word + '\n结果是:\t' + resp)
-
+        return resp
     }
 }
 
