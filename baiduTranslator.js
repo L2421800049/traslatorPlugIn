@@ -98,6 +98,7 @@ class BaiduTraslator{
                 console.log(e)
             }
         )
+        console.log(resp)
         return resp.trans_result.data[0].dst
     }
 
